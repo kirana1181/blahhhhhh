@@ -126,10 +126,6 @@ body {
   z-index: 5;
 }
 
-#trees2 {
-  left: 300px;
-}
-
 /* Canvas Container */
 #canvas-container {
   position: relative;
@@ -149,36 +145,6 @@ body {
 .h2 { font-size: 250%; }
 .h3 { font-size: 150%; }
 
-/* Week Pages */
-body.weekone {
-  min-height: 700vh;
-  overflow-y: auto;
-  background-image: url('https://cdn.glitch.global/85a4c857-ad28-44ff-bb18-b0dbdb283d4d/Untitled_Artwork%2010.png?v=1739146056594');
-  background-size: cover;
-  background-attachment: scroll;
-  color: white;
-  font-size: 100%;
-  font-family: Monaco, monospace;
-  margin-right: 150px;
-  margin-left: 150px;
-}
-
-body.weeksix {
-  min-height: 700vh;
-  overflow-y: auto;
-  background-image: url('https://cdn.glitch.global/85a4c857-ad28-44ff-bb18-b0dbdb283d4d/Untitled_Artwork%2010.png?v=1739146056594');
-  background-attachment: fixed;
-  color: white;
-  font-size: 20px;
-  font-family: Monaco, monospace;
-  margin: 0 150px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background: linear-gradient(to bottom, #001F3F, #003366, #004080, #00264D);
-  position: relative;
-}
 
 /* Space Jumps */
 .bigjump {
