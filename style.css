@@ -19,16 +19,16 @@ html, body {
   background: var(--color-bg);
 }
 
-/* Sky & Background */
+/* Sky & Background 
 .sky {
   background: var(--color-bg);
   height: 290vh;
   margin: 0;
   padding: 0;
   z-index: 5;
-}
+} 
 
-/* Content */
+/* Content 
 .content {
   position: relative;
   text-align: center;
@@ -37,7 +37,7 @@ html, body {
   top: 0px;
 }
 
-/* Stars */
+/* Stars 
 .star {
   position: absolute;
   width: 2px;
@@ -53,7 +53,7 @@ html, body {
   100% { opacity: 0.2; }
 }
 
-/* Comets */
+/* Comets 
 .comet, .comet2 {
   position: absolute;
   width: 2px;
@@ -82,7 +82,7 @@ html, body {
   100% { transform: translate(100vw, 100vh); }
 }
 
-/* Moon */
+/* Moon 
 .moon {
   position: absolute;
   width: 50px;
@@ -97,7 +97,7 @@ html, body {
   z-index: 20;
 }
 
-/* Patio */
+/* Patio 
 .patio {
   position: absolute;
   bottom: -359vh;
@@ -114,7 +114,7 @@ html, body {
   z-index: 5;
 }
 
-/* Canvas Container */
+/* Canvas Container 
 #canvas-container {
   position: relative;
   width: 133px;
