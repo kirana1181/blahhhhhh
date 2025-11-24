@@ -10,13 +10,6 @@
   --font-family-header: "HK Grotesk";
 }
 
-/* Global Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 html, body {
   margin: 0;
   padding: 0;
@@ -24,10 +17,6 @@ html, body {
   width: 100%;
   min-height: 100vh;
   background: var(--color-bg);
-}
-
-body {
-  margin: 0;
 }
 
 /* Sky & Background */
@@ -144,13 +133,3 @@ body {
 .h2 { font-size: 250%; }
 .h3 { font-size: 150%; }
 
-
-/* Space Jumps */
-.bigjump {
-  margin-bottom: 1000px;
-  margin-top: 1000px;
-}
-
-.jump {
-  margin-top: 200px;
-}
