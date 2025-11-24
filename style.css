@@ -100,7 +100,7 @@ html, body {
 /* Patio */
 .patio {
   position: absolute;
-  bottom: -259vh;
+  bottom: -359vh;
   left: 50%;
   transform: translateX(-50%) scale(1.5);
   width: 100%;
