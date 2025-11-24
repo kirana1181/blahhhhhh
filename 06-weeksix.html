@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Marine Life Theme</title>
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.8.0/p5.js"></script>
+    <style>
+        /* Gradient Background - Deep Ocean Look */
+        body {
+            margin: 0;
+            min-height: 100vh; /* Allow the body to grow beyond the viewport */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; /* Stack content vertically */
+            font-family: Monaco, monospace;
+            text-align: center;
+            color: white;
+            font-size: 15px;
+            background: linear-gradient(to bottom, #001F3F, #003366, #004080, #00264D);
+            overflow-y: auto; /* Allow vertical scrolling if content overflows */
+            position: relative;
+        }
+
+        .orca {
+            position: absolute;
+            width: 150px;
+            animation: swim 10s linear infinite;
+        }
+
+        /* First orca - Higher in the water */
+        .orca1 {
+            top: 30%;
+            left: -200px; /* Start off-screen on the left */
+            animation-duration: 12s;
+        }
+
+        /* Second orca - Lower in the water */
+        .orca2 {
+            top: 70%;
+            left: -300px; /* Start off-screen on the left */
+            animation-duration: 14s;
+        }
+
+        /* Orca swim animation - Left to Right */
+        @keyframes swim {
+            0% { left: -200px; transform: translateY(10px) scale(2.5); } /* Start off-screen */
+            50% { transform: translateY(-10px) scale(3.5); } /* Slight bobbing motion */
+            100% { left: 110vw; transform: translateY(10px) scale(2.5); } /* Move to the right */
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Orca images -->
+    <img class="orca orca1" src="https://cdn.glitch.global/85a4c857-ad28-44ff-bb18-b0dbdb283d4d/Orca_PNG_Clip_Art_Image.png?v=1741797796580" alt="Orca">
+    <img class="orca orca2" src="https://cdn.glitch.global/85a4c857-ad28-44ff-bb18-b0dbdb283d4d/Orca_PNG_Clip_Art_Image.png?v=1741797796580" alt="Orca">
+
+    <div class="content">
+        <h1>Childhood toys</h1>
+        <p>For the theme of childhood toy, I wanted to create a whale automata. Or dolphin automata. Or neither, depending how you look at it. Orcas are both classified as toothed whales, and the largest member of the dolphin family; and yet, are considered neither by the layman.</p>
+    </div>
+
+
+  <h2 class="jump"> </h2>
+  <h2>
+    the plan: Assemble the animal, assemble the autamata base using lazer cut wood!
+ 
+  </h2>
+  <br> 
+  <br>
+<p>
+ <h2>
+    Adobe illustrator:
+  </h2>
+  <br> 
+  </p> in order to cut out a 3d model, I tried first to render it in blender in hopes I could slice it and put each later into adobe to then assemble. However, this didn't work. WHATSOEVER
+  /img here/
+  instead, I aimed to go 3d by stacking layers sideways. I created the main outline of the whale, and then used consecutively decreasing smaller shapes to give it dimension. Afterwards, I spread them out
+  /img here/
+  the cut out parts: /img here/
+  
+  assembling:
+  
+ <h2>
+   the base 
+  </h2> 
+  
+  idea /img/
+  screwing and cutting
+  together
+  problems: wouldn't balance.
+  
+
+  biggest issue: the crank!
+  lazer cutters stopped working,
+  i ended up designing a lazer cut model for the crank
+  
+  <br>
+  
+</body>
+</html>
