@@ -1,0 +1,191 @@
+:root {
+  --color-bg: linear-gradient(to bottom, #000000, #001166, #0f0033);
+  --color-text-main: #000000;
+  --color-text-header: #2800ff;
+  --color-primary: #ffff00;
+  --wrapper-height: 87vh;
+  --image-max-width: 300px;
+  --image-margin: 3rem;
+  --font-family: "HK Grotesk";
+  --font-family-header: "HK Grotesk";
+}
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+  min-height: 100vh;
+  background: var(--color-bg);
+}
+
+body {
+  margin: 0;
+}
+
+/* Sky & Background */
+.sky {
+  background: var(--color-bg);
+  height: 290vh;
+  margin: 0;
+  padding: 0;
+  z-index: 5;
+}
+
+/* Content */
+.content {
+  position: relative;
+  text-align: center;
+  z-index: 20;
+  color: white;
+  top: 0px;
+}
+
+/* Stars */
+.star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: white;
+  border-radius: 50%;
+  animation: twinkle 3s infinite alternate;
+}
+
+@keyframes twinkle {
+  0% { opacity: 0.2; }
+  50% { opacity: 1; }
+  100% { opacity: 0.2; }
+}
+
+/* Comets */
+.comet, .comet2 {
+  position: absolute;
+  width: 2px;
+  height: 6px;
+  background: white;
+  opacity: 0.8;
+  border-radius: 50%;
+  box-shadow: 0 0 30px white, 0 0 50px white, 0 0 70px white;
+  z-index: 11;
+}
+
+.comet {
+  top: -50px;
+  left: -50px;
+  animation: moveComet 3.5s linear infinite;
+}
+
+.comet2 {
+  top: 150px;
+  left: -100px;
+  animation: moveComet 5.5s linear infinite;
+}
+
+@keyframes moveComet {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(100vw, 100vh); }
+}
+
+/* Moon */
+.moon {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: white;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 20px white, 0 0 40px white;
+  transition: background 1s;
+  z-index: 20;
+}
+
+/* Patio */
+.patio {
+  position: absolute;
+  bottom: -259vh;
+  left: 50%;
+  transform: translateX(-50%) scale(1.5);
+  width: 100%;
+  z-index: 6;
+}
+
+/* Trees */
+#trees, #trees2 {
+  position: absolute;
+  top: 249vh;
+  transform: scale(2.5);
+  z-index: 5;
+}
+
+#trees2 {
+  left: 300px;
+}
+
+/* Canvas Container */
+#canvas-container {
+  position: relative;
+  width: 133px;
+  height: 133px;
+  margin: 0;
+}
+
+/* Headings */
+.h1, .h2, .h3 {
+  color: white;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+}
+
+.h1 { font-size: 350%; }
+.h2 { font-size: 250%; }
+.h3 { font-size: 150%; }
+
+/* Week Pages */
+body.weekone {
+  min-height: 700vh;
+  overflow-y: auto;
+  background-image: url('https://cdn.glitch.global/85a4c857-ad28-44ff-bb18-b0dbdb283d4d/Untitled_Artwork%2010.png?v=1739146056594');
+  background-size: cover;
+  background-attachment: scroll;
+  color: white;
+  font-size: 100%;
+  font-family: Monaco, monospace;
+  margin-right: 150px;
+  margin-left: 150px;
+}
+
+body.weeksix {
+  min-height: 700vh;
+  overflow-y: auto;
+  background-image: url('https://cdn.glitch.global/85a4c857-ad28-44ff-bb18-b0dbdb283d4d/Untitled_Artwork%2010.png?v=1739146056594');
+  background-attachment: fixed;
+  color: white;
+  font-size: 20px;
+  font-family: Monaco, monospace;
+  margin: 0 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(to bottom, #001F3F, #003366, #004080, #00264D);
+  position: relative;
+}
+
+/* Space Jumps */
+.bigjump {
+  margin-bottom: 1000px;
+  margin-top: 1000px;
+}
+
+.jump {
+  margin-top: 200px;
+}
