@@ -108,7 +108,7 @@ html, body {
 }
 
 /* Trees */
-#trees, #trees2 {
+/* #trees, #trees2 {
   position: absolute;
   top: 249vh;
   z-index: 5;
